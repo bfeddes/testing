@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Urbancom CRM</title>
+        <!--BoxIcons CDN link-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="./styling/menuPanels.css">
+        <link rel="stylesheet" href="./styling/modal.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./images/urbancom-github.png">
+    </head>
+    <body>
+
+        <!--Nav bar-->
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li>
+                    <a class="navbar-links" href="modules\login\login.html"> <i class='bx bx-cog' title="Account Settings"></i></i></a>
+                </li>
+                <li>
+                    <a class="navbar-links" href="modules\login\login.html"> <i class='bx bx-log-in login-icon' title="Login"></i></a>
+                </li>
+        </nav>
+        <!-- Side bar -->
+        <div class="sidebar">
+            <div class="logo-details">
+                <i class='bx bx-menu'></i>
+                <span class="logo-name">Urbancom</span>
+            </div>
+            <!-- Sidebar navigation links -->
+            <ul class="nav-links">
+                <li>
+                    <div class="icon-link">
+                        <a href="#" class="name-icon-group">
+                            <i class="bx bx-grid-alt"></i>
+                            <span class="link-name">Dashboard</span>
+                        </a>
+                    </div>
+                    <ul class="sub-menu blank">
+                        <li><a href="#">Dashboard</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="projects-sub-menu" class="icon-link">
+                        <div class="name-icon-group">
+                            <i class='bx bx-clipboard'></i>
+                            <span class="link-name">Projects</span>
+                        </div>
+                        <i id="projects-arrow" class='bx bxs-chevron-down arrow' ></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link-name" href="#">Projects</a></li>
+                        <li><a href="./modules/clients/leads/leads.html">Create projects</a></li>
+                        <li><a href="./modules/clients/invoices/invoices.html">View projects</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="tickets-sub-menu" class="icon-link">
+                        <div class="name-icon-group">
+                            <i class='bx bx-bell'></i>
+                            <span class="link-name">Tickets</span>
+                        </div>
+                        <i id="tickets-arrow" class='bx bxs-chevron-down arrow' ></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link-name" href="#">Tickets</a></li>
+                        <li><button href="./modules/clients/leads/leads.html">Create tickets</button></li>
+                        <li><a href="./modules/clients/invoices/invoices.html">View tickets</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="clients-sub-menu" class="icon-link">
+                        <div class="name-icon-group">
+                            <i class='bx bx-group'></i>
+                            <span class="link-name">Clients</span>
+                        </div>
+                        <i id="clients-arrow" class='bx bxs-chevron-down arrow' ></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link-name" href="#">Clients</a></li>
+                        <li><a href="./modules/clients/leads/leads.html">Leads</a></li>
+                        <li><a href="./modules/clients/invoices/invoices.html">Invoices</a></li>
+                        <li><a href="./modules/clients/contacts/contacts.html">Contacts</a></li>
+                        <li><a href="./modules/clients/accounts/accounts.html">Accounts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="logistics-sub-menu" class="icon-link">
+                        <div class="name-icon-group">
+                            <i class='bx bx-package'></i>
+                            <span class="link-name">Logistics</span>
+                        </div>
+                        <i id="logistics-arrow" class='bx bxs-chevron-down arrow' ></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link-name" href="#">Logistics</a></li>
+                        <li><a href="./modules/logistics/vendors/vendors.html">Vendors</a></li>
+                        <li><a href="./modules/logistics/storage/storage.html">Storage</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="tools-sub-menu" class="icon-link">
+                        <div class="name-icon-group">
+                            <i class='bx bx-wrench'></i>
+                            <span class="link-name">Tools</span>
+                        </div>
+                        <i id="tools-arrow" class='bx bxs-chevron-down arrow' ></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link-name" href="#">Tools</a></li>
+                        <li><a href="./modules/administration/employeeDirectory.html">Help Desk Tools</a></li>
+                        <li><a href="./modules/management/tools/salesBillingTools.html">Sales & Billing Tools</a></li>
+                        <li><a href="./modules/management/tools/voipTools.html">VoIP Tools</a></li>
+                        <li><a href="./modules/management/tools/administrativeTools.html">Administrative Tools</a></li>
+                        <li><a href="./modules/management/tools/miscellaneousTools.html">Miscellaneous Tools</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="management-sub-menu" class="icon-link">
+                        <div class="name-icon-group">
+                            <i class='bx bx-building' ></i>
+                            <span class="link-name">Management</span>
+                        </div>
+                        <i id="management-arrow" class='bx bxs-chevron-down arrow' ></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link-name" href="em">Management</a></li>
+                        <li><a href="./modules/administration/employeeDirectory.html">Employee Directory</a></li>
+                        <li><a href="#">PHPMyAdmin</a></li>
+                        <li><a href="#">Billing Time Report</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <script src="menuPanels.js"></script>
+    </body>
+</html>
